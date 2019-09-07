@@ -4,6 +4,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" 
             integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" 
             crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/flickity.css" />
         <link rel="stylesheet" href="assets/css/style.css" />
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
@@ -14,11 +15,12 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" 
             integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" 
             crossorigin="anonymous"></script>
+        <script src="assets/js/flickity.pkgd.min.js"></script>
         <title>Henry Aguirre</title>
     </head>
     <body>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" padding-right="80px" padding-left="80px">		
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navBar" style="padding-right:80px; padding-left:80px" >		
             <span class="navbar-brand mb-0 h1">Henry Aguirre</span>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
@@ -63,5 +65,355 @@
                 </div>
             </div>
         </div>
+        <!-- About -->
+        <div class="component-holder about">
+            <div class="container">
+                <h4 class="title">About</h4>
+                <div class="row">
+                    <div class="col">
+                        <img class="profile-picture" src="assets/img/me.png" alt="Henry Aguirre" title="Henry Aguirre"/>
+                    </div>				
+                    <div class="col">
+                        <p class="about-text">A Full Stack Web Developer who is able to take a project from conception to deployment. Always eager to learn new
+                        technologies and advancements in the tech scene, latest pursuit being Web Development using React, Node.js, and MongoDB. Knows how to multitask and 
+                        prioritize tasks, having worked as a general clerk in the past. Graduated with a Computer Science degree in 2013, having worked 
+                        in projects using Java, C# and T-SQL. </p>
+                    </div>	
+                </div>			
+            </div>
+        </div>
+        <!-- Projects -->
+        <div class="component-holder projects">
+            <div class="container">
+                <h4 class="title">Projects</h4>
+                <div class="gallery js-flickity">
+    
+                    <div class="gallery-cell">
+                      <img src="assets/img/jobcards.jpg" class="project-img" alt="jobcards"/>
+                      <p class="project-text">
+                          <span class="project-title" alt="webventeer">JobCards</span>
+                          <br />
+                          Scrapes through job postings websites to create a single searching hub for the users. Allows users to create an account 
+                          to save jobs for later viewing, as well allow them to take and notes for specified job posting. Uses MySQL server for user authentication,
+                          job saving, and note taking through relational tables. Uses cheerio and request through express.js to scrape through sites 
+                          Project created in React and deployed on glitch.com.
+                        <br />
+                        <br />
+                        <span>
+                            <a 
+                                href="https://jobcards.glitch.me/" 
+                                target="_blank" 
+                                class="btn btn-success project-link" 
+                                rel="noopener noreferrer">
+                                    Go To Site
+                            </a>
+                        </span>
+                        <span>
+                            <a 
+                                href="https://github.com/estivensal7/JobCards" 
+                                target="_blank" 
+                                class="btn btn-danger project-link" 
+                                rel="noopener noreferrer">
+                                    Go to Repo
+                            </a>
+                        </span>
+                    </p>
+                  </div>
+    
+                  <div class="gallery-cell">
+                      <img src="assets/img/weatherstyle.jpg" class="project-img" alt="weatherstyle"/>
+                      <p class="project-text">
+                          <span class="project-title" alt="webventeer">WeatherStyle</span>
+                          <br />
+                          An application to help out the user pick what to wear based on the current weather, and also shows shopping
+                          recommendations from Ebay.com. Uses handlebars.js to display different components based on address. 
+                          Uses weather node package to gather weather info based on provided zip code and Ebay API to bring links to items
+                          into a component. Deployed on Heroku free account (may be slow to start).
+                        <br />
+                        <br />
+                        <span>
+                            <a 
+                                href="https://weather-style.herokuapp.com/" 
+                                target="_blank" 
+                                class="btn btn-success project-link" 
+                                rel="noopener noreferrer">
+                                    Go To Site
+                            </a>
+                        </span>
+                        <span>
+                            <a 
+                                href="https://github.com/octaviahub/weatherstyle" 
+                                target="_blank" 
+                                class="btn btn-danger project-link" 
+                                rel="noopener noreferrer">
+                                    Go to Repo
+                            </a>
+                        </span>
+                    </p>
+                  </div>
+    
+                  <div class="gallery-cell">
+                      <img src="assets/img/webventeer.jpg" class="project-img" alt="webventeer"/>
+                      <p class="project-text">
+                          <span class="project-title">Webventeer</span>
+                          <br />
+                          A website that helps users find volunteering events based on criteria. Uses Eventful API to find nearby events, Google Maps API 
+                          to pinpoint locations of events (if provided in Eventful API results), and Firebase for user logins. Deployed on Github Pages.
+                        <br />
+                        <br />
+                        <span>
+                            <a 
+                                href="https://mariuxiv08.github.io/Webventeer/index.html" 
+                                target="_blank" 
+                                class="btn btn-success project-link" 
+                                role="button" 
+                                rel="noopener noreferrer">
+                                    Go To Site
+                            </a>
+                        </span>
+                        <span>
+                            <a 
+                                href="https://github.com/Mariuxiv08/Webventeer" 
+                                target="_blank" 
+                                class="btn btn-danger project-link" 
+                                role="button" 
+                                rel="noopener noreferrer">
+                                    Go to Repo
+                            </a>
+                        </span>
+                    </p>
+                  </div>
+    
+                  <div class="gallery-cell">
+                      <img src="assets/img/burgereater.jpg" class="project-img" alt="burgereater"/>
+                      <p class="project-text">
+                          <span class="project-title">BurgerEater</span>
+                          <br />
+                          Type in your favorite burger and CONSUME! Uses MySQL database to store burgers, and a boolean value to check if
+                          burger has been consumed or note.
+                        <br />
+                        <br />
+                        <span>
+                            <a 
+                                href="https://guarded-taiga-69253.herokuapp.com/" 
+                                target="_blank" 
+                                class="btn btn-success project-link" 
+                                role="button" 
+                                rel="noopener noreferrer">
+                                    Go To Site
+                            </a>
+                        </span>
+                        <span>
+                            <a 
+                                href="https://github.com/aguirreh8/BurgerEater" 
+                                target="_blank" 
+                                class="btn btn-danger project-link" 
+                                role="button" 
+                                rel="noopener noreferrer">
+                                    Go to Repo
+                            </a>
+                        </span>
+                    </p>
+                  </div>
+    
+                  <div class="gallery-cell">
+                      <img src="assets/img/memorygame.jpg" class="project-img" alt="memorygame"/>
+                      <p class="project-text">
+                          <span class="project-title">Memory Game</span>
+                          <br />
+                          A memory game created in React. Updates user score and high score with states.
+                        <br />
+                        <br />
+                        <span>
+                            <a 
+                                href="https://aguirreh8.github.io/memoryGame/" 
+                                target="_blank" 
+                                class="btn btn-success project-link" 
+                                role="button" 
+                                rel="noopener noreferrer">
+                                    Go To Site
+                            </a>
+                        </span>
+                        <span>
+                            <a 
+                                href="https://github.com/aguirreh8/memoryGame" 
+                                target="_blank" 
+                                class="btn btn-danger project-link" 
+                                role="button" 
+                                rel="noopener noreferrer">
+                                    Go to Repo
+                            </a>
+                        </span>
+                    </p>
+                  </div>
+    
+                  <div class="gallery-cell">
+                      <img src="assets/img/hangman.jpg" class="project-img" alt="hangman"/>
+                      <p class="project-text">
+                          <span class="project-title">Hangman</span>
+                          <br />
+                          A game of hangman. Picks a word from an array at random. Written in jQuery.
+                        <br />
+                        <br />
+                        <span>
+                            <a 
+                                href="https://aguirreh8.github.io/Hangman-Game/" 
+                                target="_blank" 
+                                class="btn btn-success project-link" 
+                                role="button" 
+                                rel="noopener noreferrer">
+                                    Go To Site
+                            </a>
+                        </span>
+                        <span>
+                            <a 
+                                href="https://github.com/aguirreh8/Hangman-Game" 
+                                target="_blank" 
+                                class="btn btn-danger project-link" 
+                                role="button" 
+                                rel="noopener noreferrer">
+                                    Go to Repo
+                            </a>
+                        </span>
+                    </p>
+                  </div>
+    
+                  <div class="gallery-cell">
+                      <img src="assets/img/what2wear.jpg" class="project-img" alt="What2Wear"/>
+                      <p class="project-text">
+                          <span class="project-title">What 2 Wear</span>
+                          <br />
+                          An application that helps the user choose what to wear based on weather conditions.
+                        <br />
+                        <br />
+                        <span>
+                            <a 
+                                href="https://what2wear.glitch.me/" 
+                                target="_blank" 
+                                class="btn btn-success project-link" 
+                                role="button" 
+                                rel="noopener noreferrer">
+                                    Go To Site
+                            </a>
+                        </span>
+                        <span>
+                            <a 
+                                href="https://github.com/aguirreh8/what2wear" 
+                                target="_blank" 
+                                class="btn btn-danger project-link" 
+                                role="button" 
+                                rel="noopener noreferrer">
+                                    Go to Repo
+                            </a>
+                        </span>
+                    </p>
+                  </div>    
+    
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="component-holder contact">
+            <div class="container">
+                <h4 class="title">Contact Me</h4>
+                <div class="row">
+                    <div class="col-md-5">
+                        <p>If you would like to contact me, or know more, check any of the links below. You can use the provided form to directly send an email.</p>
+                        <a 
+                            class="ext-link" 
+                            href="https://github.com/aguirreh8" 
+                            target="_blank" 
+                            rel="noopener noreferrer">
+                                <img src="assets/img/github.png" class="thumbnail" alt="github"/>
+                                Github
+                        </a>
+                        <a 
+                            class="ext-link"
+                            href="https://www.linkedin.com/in/henry-aguirre-6b9469a1" 
+                            target="_blank" 
+                            rel="noopener noreferrer">
+                            <img src="assets/img/linkedin.png" class="thumbnail" alt="linkedin"/>
+                            LinkedIn
+                        </a>
+                        <a 
+                            class="ext-link"
+                            href="https://stackoverflow.com/users/8903394/henry" 
+                            target="_blank" 
+                            rel="noopener noreferrer">
+                            <img src="assets/img/stackoverflow.png" class="thumbnail" alt="stackoverflow"/>
+                            Stack Overflow
+                        </a>
+                        <a 
+                            class="ext-link">
+                            <img src="assets/img/email.png" class="thumbnail" alt="email"/>
+                            aguirreh8@gmail.com
+                        </a>
+                        <a 
+                            class="ext-link">
+                            <img src="assets/img/phone.png" class="thumbnail" alt="phone"/>
+                            551-222-9775
+                        </a>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-6">
+                        <form>
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">Name:</label>
+                                <div class="col-sm-9">
+                                    <input 
+                                        type="input" 
+                                        class="form-control"
+                                        name="name" 
+                                        placeholder="Enter name" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">Email:</label>
+                                <div class="col-sm-9">
+                                    <input 
+                                        type="email" 
+                                        class="form-control"
+                                        name="sender"  
+                                        placeholder="Enter email" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">Subject:</label>
+                                <div class="col-sm-9">
+                                    <input 
+                                        type="input" 
+                                        class="form-control"
+                                        name="subject"
+                                        placeholder="Enter subject" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">Message:</label>
+                                <div class="col-sm-9">
+                                    <textarea 
+                                        class="form-control" 
+                                        rows="5" 
+                                        style="resize: none"
+                                        name="message" 
+                                        placeholder="Enter subject"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <button type="button" class="btn btn-primary btn-lg mx-auto">
+                                    Send
+                                </button>
+                            </div>
+                        </form>					
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            Copyright @ Henry Aguirre 2018
+        </div>
+        <script src="assets/js/script.js"></script>
     </body>
 </html>
