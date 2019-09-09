@@ -247,6 +247,30 @@ body {
 	text-shadow: 4px 2px 2px rgba(0, 0, 0, .85);
 }
 
+.contact-description {
+	font-size: 30px;
+	padding: 20px;
+}
+
+.send-mail {
+	width: 80%;
+	height: 80px;
+	padding: 10px;
+	color: white;
+	background-color: #05AEF9FF;
+	font-weight: bold;
+	font-size: 25px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.send-mail:hover {
+	background-color: #C9FFFFFF;
+	color: black;
+}
+
 /* Footer attributes */
 .footer {
 	width: 100%;

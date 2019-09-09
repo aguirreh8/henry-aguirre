@@ -357,54 +357,10 @@
                     </div>
                     <div class="col-md-1"></div>
                     <div class="col-md-6">
-                        <form>
-                            <div class="form-group row">
-                                <label class="col-sm-2 col-form-label">Name:</label>
-                                <div class="col-sm-9">
-                                    <input 
-                                        type="input" 
-                                        class="form-control"
-                                        name="name" 
-                                        placeholder="Enter name" />
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-sm-2 col-form-label">Email:</label>
-                                <div class="col-sm-9">
-                                    <input 
-                                        type="email" 
-                                        class="form-control"
-                                        name="sender"  
-                                        placeholder="Enter email" />
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-sm-2 col-form-label">Subject:</label>
-                                <div class="col-sm-9">
-                                    <input 
-                                        type="input" 
-                                        class="form-control"
-                                        name="subject"
-                                        placeholder="Enter subject" />
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-sm-2 col-form-label">Message:</label>
-                                <div class="col-sm-9">
-                                    <textarea 
-                                        class="form-control" 
-                                        rows="5" 
-                                        style="resize: none"
-                                        name="message" 
-                                        placeholder="Enter subject"></textarea>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <button type="button" class="btn btn-primary btn-lg mx-auto">
-                                    Send
-                                </button>
-                            </div>
-                        </form>					
+                        <p class="contact-description">If you would like to contact me, please feel free to send me an email.</p>
+					    <form action="mailto:aguirreh8@gmail.com" method="post" enctype="text/plain">
+                            <input id="sendMail" class="send-mail" type="submit" name="sendMail" value="Send" />
+					    </form>
                     </div>
                 </div>
             </div>
