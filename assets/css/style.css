@@ -2,9 +2,9 @@
 @import "https://fonts.googleapis.com/css?family=Oleo+Script:400,700";
 @import "https://fonts.googleapis.com/css?family=Pontano+Sans|Varela+Round";
 
-/* * {
-	box-sizing: border-box;
-} */
+*, ::after, ::before {
+    box-sizing: border-box;
+}
 
 /* Body attributes */
 .title {
