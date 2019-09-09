@@ -19,6 +19,7 @@
         <title>Henry Aguirre</title>
     </head>
     <body>
+        <a id="top"></a>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navBar" style="padding-right:80px; padding-left:80px" >		
             <span class="navbar-brand mb-0 h1">Henry Aguirre</span>
@@ -29,16 +30,16 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav" >
                     <li class="nav-item">
-                        <a class="nav-link font-weight-bold" id="top" href="">Top</a>
+                        <a class="nav-link font-weight-bold" id="top" href="#top">Top</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link font-weight-bold" id="about" href="">About</a>
+                        <a class="nav-link font-weight-bold" id="about" href="#aboutContainer">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link font-weight-bold" id="projects" href="">Projects</a>
+                        <a class="nav-link font-weight-bold" id="projects" href="#projectContainer">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link font-weight-bold" id="contact" href="">Contact</a>
+                        <a class="nav-link font-weight-bold" id="contact" href="#contactContainer">Contact</a>
                     </li>
                 </ul>
             </div>	  	
@@ -66,7 +67,7 @@
             </div>
         </div>
         <!-- About -->
-        <div class="component-holder about">
+        <div class="component-holder about" id="aboutContainer">
             <div class="container">
                 <h4 class="title">About</h4>
                 <div class="row">
@@ -83,7 +84,7 @@
             </div>
         </div>
         <!-- Projects -->
-        <div class="component-holder projects">
+        <div class="component-holder projects" id="projectContainer">
             <div class="container">
                 <h4 class="title">Projects</h4>
                 <div class="gallery js-flickity">
@@ -314,7 +315,7 @@
         </div>
 
         <!-- Contact -->
-        <div class="component-holder contact">
+        <div class="component-holder contact" id="contactContainer">
             <div class="container">
                 <h4 class="title">Contact Me</h4>
                 <div class="row">
